@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+  </head>
+  <body>
+    <div
+      class="alert alert-{{ message.level ?? 'primary' }} alert-dismissible fade show"
+      role="alert"
+    >
+      {{ message.text | raw }}
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+*
+.DS_Store
+!/app.yaml
+!/composer.*
+!/public
+!/src
+!/templates

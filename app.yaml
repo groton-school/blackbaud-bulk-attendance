@@ -1,0 +1,10 @@
+runtime: php81
+instance_class: B1
+manual_scaling:
+  instances: 1
+entrypoint: serve src/app.php
+handlers:
+  - url: /assets
+    static_dir: public/assets
+  - url: (.*)
+    script: /public/\1

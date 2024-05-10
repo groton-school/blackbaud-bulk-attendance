@@ -1,0 +1,27 @@
+{
+  "name": "groton-school/blackbaud-bulk-attendance",
+  "description": "Upload a bulk attendance list as a CSV to Blackbaud",
+  "version": "0.1.0",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Seth Battis",
+      "email": "sbattis@groton.org"
+    }
+  ],
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "require": {
+    "groton-school/sky-api.school": "@dev",
+    "twig/twig": "^3.9",
+    "battis/data-utilities": "^1.2",
+    "php-di/php-di": "^7.0",
+    "groton-school/sky-api.appengine-client": "@dev",
+    "battis/lazy-secrets": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "GrotonSchool\\Blackbaud\\": "src"
+    }
+  }
+}
