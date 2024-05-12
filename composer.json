@@ -9,14 +9,12 @@
       "email": "sbattis@groton.org"
     }
   ],
-  "prefer-stable": true,
-  "minimum-stability": "dev",
   "require": {
-    "groton-school/sky-api.school": "@dev",
+    "groton-school/sky-api.school": "^0.2",
     "twig/twig": "^3.9",
     "battis/data-utilities": "^1.2",
     "php-di/php-di": "^7.0",
-    "groton-school/sky-api.appengine-client": "@dev",
+    "groton-school/sky-api.appengine-client": "^0.2",
     "battis/lazy-secrets": "^1.1"
   },
   "autoload": {

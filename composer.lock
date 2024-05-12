@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d851eba90298e48ed98c436ea8c4fa7b",
+    "content-hash": "1a632caf96ac2d85b71730c77cd4deb1",
     "packages": [
         {
             "name": "battis/data-utilities",
@@ -132,22 +132,21 @@
         },
         {
             "name": "battis/openapi-client.base",
-            "version": "dev-main",
+            "version": "v0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/battis/openapi-client.base.git",
-                "reference": "9f0501c00832757ae287e03d0adae4ebf1fd9ece"
+                "reference": "b53fb6b3b14bd7750c1bfad5ee8c2ab76d3c988a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/battis/openapi-client.base/zipball/9f0501c00832757ae287e03d0adae4ebf1fd9ece",
-                "reference": "9f0501c00832757ae287e03d0adae4ebf1fd9ece",
+                "url": "https://api.github.com/repos/battis/openapi-client.base/zipball/b53fb6b3b14bd7750c1bfad5ee8c2ab76d3c988a",
+                "reference": "b53fb6b3b14bd7750c1bfad5ee8c2ab76d3c988a",
                 "shasum": ""
             },
             "require": {
                 "league/oauth2-client": "^2.7"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -167,9 +166,9 @@
             "description": "Base for a PHP client for a RESTful API from its OpenAPI description file",
             "support": {
                 "issues": "https://github.com/battis/openapi-client.base/issues",
-                "source": "https://github.com/battis/openapi-client.base/tree/main"
+                "source": "https://github.com/battis/openapi-client.base/tree/v0.1"
             },
-            "time": "2024-05-09T17:01:40+00:00"
+            "time": "2024-05-12T00:24:34+00:00"
         },
         {
             "name": "brick/math",
@@ -649,16 +648,16 @@
         },
         {
             "name": "groton-school/oauth2-blackbaudsky",
-            "version": "v0.2.5",
+            "version": "v0.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/OAuth2-BlackbaudSKY.git",
-                "reference": "1955ea4c9125b15ac205235b65ae88f1b0e508b8"
+                "reference": "9fd242702b2c4c2fbd59d9211e7585cbe44d5f2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/OAuth2-BlackbaudSKY/zipball/1955ea4c9125b15ac205235b65ae88f1b0e508b8",
-                "reference": "1955ea4c9125b15ac205235b65ae88f1b0e508b8",
+                "url": "https://api.github.com/repos/groton-school/OAuth2-BlackbaudSKY/zipball/9fd242702b2c4c2fbd59d9211e7585cbe44d5f2e",
+                "reference": "9fd242702b2c4c2fbd59d9211e7585cbe44d5f2e",
                 "shasum": ""
             },
             "require": {
@@ -685,30 +684,28 @@
             ],
             "description": "This package provides Blackbaud SKY OAuth 2.0 support for the PHP League's OAuth 2.0 Client",
             "support": {
-                "issues": "https://github.com/groton-school/OAuth2-BlackbaudSKY/issues",
-                "source": "https://github.com/groton-school/OAuth2-BlackbaudSKY/tree/v0.2.5"
+                "source": "https://github.com/groton-school/OAuth2-BlackbaudSKY/tree/v0.2.6"
             },
-            "time": "2024-02-12T14:32:41+00:00"
+            "time": "2024-04-25T16:55:19+00:00"
         },
         {
             "name": "groton-school/sky-api.appengine-client",
-            "version": "dev-main",
+            "version": "v0.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/sky-api.appengine-client.git",
-                "reference": "bf9bcd4f74477b18e44da69115b716cbfe60fc54"
+                "reference": "643592e9278ef183caae5925fd129d06ec726fcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/sky-api.appengine-client/zipball/bf9bcd4f74477b18e44da69115b716cbfe60fc54",
-                "reference": "bf9bcd4f74477b18e44da69115b716cbfe60fc54",
+                "url": "https://api.github.com/repos/groton-school/sky-api.appengine-client/zipball/643592e9278ef183caae5925fd129d06ec726fcf",
+                "reference": "643592e9278ef183caae5925fd129d06ec726fcf",
                 "shasum": ""
             },
             "require": {
                 "battis/lazy-secrets": "^1.1",
-                "battis/openapi-client.base": "@dev"
+                "battis/openapi-client.base": "^0.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -727,29 +724,28 @@
             ],
             "description": "Blackbaud SKY API PHP client native to Google App Engine",
             "support": {
-                "source": "https://github.com/groton-school/sky-api.appengine-client/tree/main"
+                "source": "https://github.com/groton-school/sky-api.appengine-client/tree/v0.2.6"
             },
-            "time": "2024-05-09T16:08:48+00:00"
+            "time": "2024-05-12T00:31:36+00:00"
         },
         {
             "name": "groton-school/sky-api.school",
-            "version": "dev-main",
+            "version": "v0.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/sky-api.school.git",
-                "reference": "565ce59b021985125f3eb47c9fde243560775379"
+                "reference": "eaf79de9063a393aed3ed51e0a1fc1b870284d66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/sky-api.school/zipball/565ce59b021985125f3eb47c9fde243560775379",
-                "reference": "565ce59b021985125f3eb47c9fde243560775379",
+                "url": "https://api.github.com/repos/groton-school/sky-api.school/zipball/eaf79de9063a393aed3ed51e0a1fc1b870284d66",
+                "reference": "eaf79de9063a393aed3ed51e0a1fc1b870284d66",
                 "shasum": ""
             },
             "require": {
-                "battis/openapi-client.base": "@dev",
+                "battis/openapi-client.base": "^0.1",
                 "groton-school/oauth2-blackbaudsky": "^0.2"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -768,9 +764,9 @@
             ],
             "description": "PHP client for Blackbaud's SKY API - School API",
             "support": {
-                "source": "https://github.com/groton-school/sky-api.school/tree/main"
+                "source": "https://github.com/groton-school/sky-api.school/tree/v0.2.6"
             },
-            "time": "2024-05-10T15:03:38+00:00"
+            "time": "2024-05-12T00:31:37+00:00"
         },
         {
             "name": "grpc/grpc",
@@ -2295,16 +2291,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.9.3",
+            "version": "v3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58"
+                "reference": "34422f90043aba75e419dd77ee0a86e1688c28ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58",
-                "reference": "a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/34422f90043aba75e419dd77ee0a86e1688c28ee",
+                "reference": "34422f90043aba75e419dd77ee0a86e1688c28ee",
                 "shasum": ""
             },
             "require": {
@@ -2358,7 +2354,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.9.3"
+                "source": "https://github.com/twigphp/Twig/tree/v3.10.0"
             },
             "funding": [
                 {
@@ -2370,17 +2366,14 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-18T11:59:33+00:00"
+            "time": "2024-05-11T07:44:16+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "groton-school/sky-api.school": 20,
-        "groton-school/sky-api.appengine-client": 20
-    },
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
