@@ -78,7 +78,8 @@ async function guideBlackbaudAppCreation({
     await gcloud.iap.enable({
       applicationTitle: project.name,
       supportEmail: args.values.supportEmail,
-      users: args.values.users
+      users: args.values.users,
+      project
     });
 
     // guide storage of Blackbaud credentials in Secret Manager, SKY App creation and configuration
