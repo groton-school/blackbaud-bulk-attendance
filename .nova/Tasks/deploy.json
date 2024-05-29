@@ -2,7 +2,7 @@
   "actions" : {
     "run" : {
       "enabled" : true,
-      "script" : "pnpm run deploy -v"
+      "script" : "pnpm run deploy"
     }
   },
   "openLogOnRun" : "start"
