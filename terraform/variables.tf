@@ -21,7 +21,6 @@ variable "blackbaud_student_list_id" {
 variable "google_folder_id" {
   type        = string
   description = "Google Cloud folder ID, which can be found at https://console.cloud.google.com/cloud-resource-manager"
-  default     = ""
 }
 
 variable "google_billing_account" {
@@ -43,4 +42,28 @@ variable "google_project_id" {
 variable "google_region" {
   type        = string
   description = "Google Region"
+}
+
+variable "google_oauth_support_email" {
+  type        = string
+  description = "Email address to register as the support contact for IAP OAuth Brand"
+}
+
+variable "google_oauth_secret" {
+  type        = string
+  description = "Google IAP OAuth client secret"
+}
+
+variable "google_iap_users" {
+  type = list(object({
+    type  = string
+    email = string
+  }))
+  description = "Users and groups with access to the IAP-protected App Engine app"
+  validation {
+    condition = alltrue([
+      for u in var.google_iap_users : contains(["user", "group", "serviceaccount"], u.type)
+    ])
+    error_message = "The type must be one of `user`, `group`, or `serviceaccount`."
+  }
 }
