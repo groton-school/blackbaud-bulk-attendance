@@ -11,6 +11,7 @@ terraform {
 # GOOGLE_REGION is set in environment, and also read
 provider "google" {
   project = var.google_project_id
+  region  = var.google_region
 }
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#provider-default-values-configuration
@@ -20,7 +21,7 @@ resource "google_project" "main" {
   auto_create_network = true
   billing_account     = var.google_billing_account
   folder_id           = var.google_folder_id
-  name                = var.app_name
+  name                = var.google_project_name
   project_id          = var.google_project_id
 }
 

@@ -1,9 +1,3 @@
-variable "app_name" {
-  type        = string
-  description = "Name of app"
-  default     = "Bulk Attendance"
-}
-
 variable "blackbaud_application_id" {
   type        = string
   description = "OAuth 2.0 application ID of the Blackbaud application, which can be found at https://developer.blackbaud.com/apps/"
@@ -27,6 +21,7 @@ variable "blackbaud_student_list_id" {
 variable "google_folder_id" {
   type        = string
   description = "Google Cloud folder ID, which can be found at https://console.cloud.google.com/cloud-resource-manager"
+  default     = ""
 }
 
 variable "google_billing_account" {
@@ -34,7 +29,18 @@ variable "google_billing_account" {
   description = "Google Cloud billing account ID, which can be found at https://console.cloud.google.com/billing"
 }
 
+variable "google_project_name" {
+  type        = string
+  description = "Google Cloud Project name"
+  default     = "Bulk Attendance"
+}
+
 variable "google_project_id" {
   type        = string
   description = "Google Cloud Project ID, which can be found at https://console.cloud.google.com/home/dashboard"
+}
+
+variable "google_region" {
+  type        = string
+  description = "Google Region"
 }
