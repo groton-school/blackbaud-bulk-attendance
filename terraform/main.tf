@@ -7,6 +7,8 @@ terraform {
   }
 }
 
+# provider.project is automatically applied to many resources
+# GOOGLE_REGION is set in environment, and also read
 provider "google" {
   project = var.google_project_id
 }
@@ -18,28 +20,42 @@ resource "google_project" "main" {
   auto_create_network = true
   billing_account     = var.google_billing_account
   folder_id           = var.google_folder_id
-  name                = "Bulk Attendance"
+  name                = var.app_name
   project_id          = var.google_project_id
 }
 
-resource "google_project_service" "appengine_googleapis_com" {
+resource "google_project_service" "appengine" {
   project = google_project.main.project_id
   service = "appengine.googleapis.com"
 }
 
-resource "google_project_service" "iap_googleapis_com" {
+resource "google_project_service" "iap" {
   project = google_project.main.project_id
   service = "iap.googleapis.com"
 }
 
-resource "google_project_service" "secretmanager_googleapis_com" {
+resource "google_project_service" "secretmanager" {
   project = google_project.main.project_id
   service = "secretmanager.googleapis.com"
+}
+
+resource "google_project_service" "cloudbuild" {
+  project = google_project.main.project_id
+  service = "cloudbuild.googleapis.com"
 }
 
 resource "google_app_engine_application" "main" {
   project     = google_project.main.project_id
   location_id = "us-east4"
+}
+
+resource "google_project_iam_member" "appengine_service_account" {
+  for_each = toset([
+    "roles/secretmanager.secretAccessor"
+  ])
+  role    = each.key
+  member  = "serviceAccount:${google_project.main.project_id}@appspot.gserviceaccount.com"
+  project = google_project.main.project_id
 }
 
 resource "google_secret_manager_secret" "blackbaud_access_key" {
@@ -87,7 +103,7 @@ resource "google_secret_manager_secret" "blackbaud_redirect_url" {
 
 resource "google_secret_manager_secret_version" "blackbaud_redirect_url_version" {
   secret      = google_secret_manager_secret.blackbaud_redirect_url.id
-  secret_data = format("%s/redirect", google_app_engine_application.main.default_hostname)
+  secret_data = "${google_app_engine_application.main.default_hostname}/redirect"
 }
 
 resource "google_secret_manager_secret" "student_list_id" {
