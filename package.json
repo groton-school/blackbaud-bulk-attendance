@@ -6,7 +6,7 @@
   "prettier": "@battis/prettier-config",
   "devDependencies": {
     "@battis/eslint-config": "^2.0.1",
-    "@battis/partly-gcloudy": "^0.4.5",
+    "@battis/partly-gcloudy": "^0.6.0",
     "@battis/prettier-config": "^1.5.5",
     "@battis/qui-cli": "^0.4.2"
   },
