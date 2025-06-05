@@ -21,5 +21,8 @@
     "psr-4": {
       "GrotonSchool\\Blackbaud\\": "src"
     }
+  },
+  "require-dev": {
+    "marcocesarato/php-conventional-changelog": "^1.17"
   }
 }

@@ -1,14 +1,21 @@
 {
+  "name": "blackbaud-bulk-attendance",
+  "version": "0.1.0",
   "scripts": {
-    "deploy": "bin/deploy.mjs",
-    "setup": "bin/setup.mjs"
+    "deploy": "node ./bin/deploy.mjs -v"
   },
-  "prettier": "@battis/prettier-config",
   "devDependencies": {
     "@battis/eslint-config": "^2.0.3",
-    "@battis/partly-gcloudy": "^0.6.9",
+    "@battis/partly-gcloudy": "^1.1.5",
     "@battis/prettier-config": "^1.6.0",
-    "@battis/qui-cli": "^0.9.9"
+    "@battis/qui-cli.colors": "^2.0.1",
+    "@battis/qui-cli.core": "^2.1.0",
+    "@battis/qui-cli.env": "^2.0.4",
+    "@battis/qui-cli.log": "^2.1.0",
+    "@battis/qui-cli.plugin": "^2.3.1",
+    "@battis/qui-cli.root": "^2.0.2",
+    "@battis/qui-cli.validators": "^2.0.1",
+    "@inquirer/prompts": "^7.5.3"
   },
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }
